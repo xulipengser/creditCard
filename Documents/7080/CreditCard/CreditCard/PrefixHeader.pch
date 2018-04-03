@@ -1,0 +1,52 @@
+//
+//  PrefixHeader.pch
+//  CreditCard
+//
+//  Created by 廖智尧 on 2018/2/5.
+//  Copyright © 2018年 廖智尧. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "OMESoft.h"
+#import "NSDictionary+ZY.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "CreditCardDefine.h"
+
+#define BASEURL @"http://api.7080pay.cn:8017"          // APP接口基URL
+#define ImgBaseURL @"http://api.7080pay.cn:8027"          // APP接口基URL
+#define PrivateKey @"7080*BJKGJ-2018"
+#define CheckinURL   [BASEURL stringByAppendingString:@"/api/BaJie/Account/Checkin"]
+#define RegisterURL  [BASEURL stringByAppendingString:@"/api/BaJie/Account/Register"]
+#define GetUserInfoURL  [BASEURL stringByAppendingString:@"/api/BaJie/Account/UserInfo"]//获取用户信息
+#define UpdateUserInfo  [BASEURL stringByAppendingString:@"/api/BaJie/Account/UpdateUserInfo"]//修改用户信息
+#define UploadFileURL  [BASEURL stringByAppendingString:@"/api/BaJie/UploadFile/Image"]
+#define UpdateHeadImgURL  [BASEURL stringByAppendingString:@"/api/BaJie/Account/UpdateHeadImg"]
+#define IdCertURL  [BASEURL stringByAppendingString:@"/api/BaJie/Account/IdCert"]
+#define SharePictureListURL  [BASEURL stringByAppendingString:@"/api/BaJie/Module/SharePictureList"]   // 分享列表
+#define ModuleListURL  [BASEURL stringByAppendingString:@"/api/BaJie/Module/ModuleList"]   // 获取功能列表接口
+#define BankListURL  [BASEURL stringByAppendingString:@"/api/BaJie/Bank/BankList"]   // 获取银行卡列表接口
+#define DebitCardListURL  [BASEURL stringByAppendingString:@"/api/BaJie/Bank/DebitCardList"]   // 获取借记卡列表接口
+#define SetDefaultDebitCard  [BASEURL stringByAppendingString:@"/api/BaJie/Bank/SetDefaultDebitCard"]//设置默认借记卡
+#define RemoveDebitCard  [BASEURL stringByAppendingString:@"/api/BaJie/Bank/RemoveDebitCard"]//删除借记卡
+
+#define CreditCardListURL  [BASEURL stringByAppendingString:@"/api/BaJie/Bank/CreditCardList"]   // 获取信用卡列表接口
+#define AddDebitCardURL  [BASEURL stringByAppendingString:@"/api/BaJie/Bank/AddDebitCard"]   // 添加借记卡信息接口
+#define AuthCode  [BASEURL stringByAppendingString:@"/api/BaJie/Account/AuthCode"]   // 验证码
+#define UpdateTradePassword  [BASEURL stringByAppendingString:@"/api/BaJie/Account/UpdateTradePassword"]   // 设置交易密码
+#define UpdateLoginPassword  [BASEURL stringByAppendingString:@"/api/BaJie/Account/UpdateLoginPassword"]   // 设置登录密码
+#define CreateOrder  [BASEURL stringByAppendingString:@"/api/BaJie/Order/CreateOrder"]   // 创建订单
+#define OrderList  [BASEURL stringByAppendingString:@"/api/BaJie/Order/OrderList"]   // 订单列表
+#define RankList  [BASEURL stringByAppendingString:@"/api/BaJie/Rank/RankList"]   // 获取会员等级列表
+#define UpGrade  [BASEURL stringByAppendingString:@"/api/BaJie/Rank/UpGrade"]//会员升级
+
+#define IOSVersion  [BASEURL stringByAppendingString:@"/api/BaJie/AppStatus/IOSVersion"]//版本
+
+// 通知
+#define UserInfoChangeNotification @"UserInfoChangeNotification"
+#define UserInfoUpdateNotification @"UserInfoUpdateNotification"
+
+#endif /* PrefixHeader_pch */
+
